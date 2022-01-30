@@ -1,0 +1,2 @@
+After finished all video:
+    - Read All Data Fetching: https://nextjs.org/docs/basic-features/data-fetching/get-static-props
