@@ -1,0 +1,3 @@
+pages/blog --> nested route
+pages/docs --> catch all route
+pages/product --> dynamic route
