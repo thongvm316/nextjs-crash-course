@@ -1,0 +1,4 @@
+1. OK.
+2. If has 3 posts, user go to post 4, this is not exists, page is not redirect to 404, instead it will go to custom component and get data from api.
+3. After 2 success, it will generate html and json into next/server/page for catch with CDN.
+4. After has props data, the page will swap from fallback to full page (isFallback)
