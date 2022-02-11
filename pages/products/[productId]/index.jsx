@@ -9,4 +9,4 @@ const ProductDetail = () => {
 
 export default ProductDetail
 
-// * can use this file instead [productId].jsx
+// * can use this file name index.jsx instead [productId].jsx
