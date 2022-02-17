@@ -38,5 +38,62 @@
       "category": "sports",
       "description": "ghj 1"
     }
+  ],
+  "dashboard": {
+    "posts": 555,
+    "likes": 100,
+    "follower": 20,
+    "following": 50
+  },
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "desc": "Desc 1",
+      "category": "football",
+      "date": "March 16"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "desc": "Desc 2",
+      "category": "sports",
+      "date": "March 16"
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "desc": "Desc 3",
+      "category": "sports",
+      "date": "March 16"
+    },
+    {
+      "id": 4,
+      "title": "Event 4",
+      "desc": "Desc 4",
+      "category": "sports",
+      "date": "March 16"
+    },
+    {
+      "id": 5,
+      "title": "Event 5",
+      "desc": "Desc 5",
+      "category": "sports",
+      "date": "March 16"
+    },
+    {
+      "id": 6,
+      "title": "Event 6",
+      "desc": "Desc 6",
+      "category": "sports",
+      "date": "March 16"
+    },
+    {
+      "id": 7,
+      "title": "Event 7",
+      "desc": "Desc 7",
+      "category": "sports",
+      "date": "March 16"
+    }
   ]
 }

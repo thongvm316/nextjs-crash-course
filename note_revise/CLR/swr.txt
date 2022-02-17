@@ -1,0 +1,1 @@
+1. After fetch data, db update data, page no need to reload for get new value, swr would handle it.
