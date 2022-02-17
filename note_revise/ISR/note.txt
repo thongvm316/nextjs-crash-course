@@ -1,0 +1,6 @@
+1. Stale data:
+    a. In SSG: after build for production, then change value in db, then check in web and new db is not update. (no build after change data).
+    b. With Dynamic route, it works as expected with initial request, but if change data, and have same problem above.
+    c. Slove:
+        1. Add revalidate: 10 in to return of getStaticProps, it mean: at initial request, it not work, but if user refresh page, it work and get new data | What does 10 mean?
+
