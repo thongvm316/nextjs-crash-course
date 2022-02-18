@@ -5,3 +5,12 @@ pages/product --> dynamic route
 --- Pre-Rendering
 pages/posts: SSG
 pages/products: ISR
+
+--- Concept
+1. Pre-Rendering
+    a. SSG
+    b. ISR
+    c. SSG
+    d. CLG
+
+2. Route, nested, dynamic
