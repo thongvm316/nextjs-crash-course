@@ -1,0 +1,17 @@
+There are some steps:
+1. Create api/auth folder, then [...nextauth].js in this folder
+
+2. Import "import { Provider } from 'next-auth/client'"
+    Then: wrap in _app.js:
+        <Provider>
+            {children}
+        </Provider>
+        
+    Purpose this step:
+        1. Problem: each page in folder pages, session just runs one time, and not return final result
+        2. When add this: can runs and return the result as expected
+
+    Note: all files in components folder can work well without config this
+
+3.  Use useSession, getSession for protect router, authentication all app (refer dashboard, navbar component)
+    

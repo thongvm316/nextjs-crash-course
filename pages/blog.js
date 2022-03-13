@@ -11,6 +11,7 @@ export default Blog
 
 export async function getServerSideProps(context) {
   const session = await getSession(context)
+  console.log(session)
   if (!session) {
     return {
       redirect: {
@@ -19,6 +20,7 @@ export async function getServerSideProps(context) {
       },
     }
   }
+  // if not login, go to signin api and callback to this page if signin success
   return {
     props: {
       data: 'List of 100 personalized blogs',

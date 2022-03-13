@@ -1,0 +1,28 @@
+There are some steps:
+    1. In getServerSideProps add const session = await getSession(context), and use it for authentication
+    2. In func component, use useSession for auth, not use props from getServerSideProps
+    3. In _app.js, add session={pageProps.session} as props to component Provider
+
+Securing Pages Server-side
+    export async function getServerSideProps(context) {
+    const session = await getSession(context)
+    console.log(session)
+        if (!session) {
+            return {
+            redirect: {
+                destination: '/api/auth/signin?callbackUrl=http://localhost:3000/blog',
+                permanent: false,
+            },
+            }
+        }
+    // if not login, go to signin api and callback to this page if signin success
+        return {
+            props: {
+            data: 'List of 100 personalized blogs',
+            session,
+            },
+        }
+    }
+    Position: pages/blog.js
+
+https://next-auth.js.org/tutorials/securing-pages-and-api-routes
