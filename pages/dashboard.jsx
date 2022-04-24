@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
-import { getSession, signIn } from 'next-auth/client'
+import { getSession, signIn, useSession } from 'next-auth/client'
 
 function Dashboard() {
   const [loading, setLoading] = useState(true)
+
+  // const [session, loading] = useSession()
+  // console.log('dashboard', { session, loading })
 
   useEffect(() => {
     const securePage = async () => {

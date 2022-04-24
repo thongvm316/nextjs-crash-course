@@ -5,7 +5,7 @@ import { useSession } from 'next-auth/client'
 
 export default function Home() {
   const [session, loading] = useSession()
-  console.log({ session, loading })
+  console.log('Index', { session, loading })
   return (
     <div className={styles.container}>
       <Head>

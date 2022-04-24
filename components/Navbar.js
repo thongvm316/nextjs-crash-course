@@ -3,6 +3,7 @@ import { signIn, signOut, useSession } from 'next-auth/client'
 
 function Navbar() {
   const [session, loading] = useSession()
+  console.log('Navbar', { session, loading })
   return (
     <nav className='header'>
       <h1 className='logo'>
@@ -31,7 +32,7 @@ function Navbar() {
               <a
                 onClick={(e) => {
                   e.preventDefault()
-                  signIn('github')
+                  signIn('github') // params: github mean, if it appear, user click signIn btn, then can go SignIn directly without go to signIn page. If it not appear, go to SignIn page when user click SignIn button
                 }}
               >
                 Sign In

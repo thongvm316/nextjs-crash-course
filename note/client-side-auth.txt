@@ -8,7 +8,7 @@ There are some steps:
         </Provider>
         
     Purpose this step:
-        1. Problem: each page in folder pages, session just runs one time, and not return final result
+        1. Problem: each page in folder pages, session just runs one time, and not return final result (just call one time)
         2. When add this: can runs and return the result as expected
 
     Note: all files in components folder can work well without config this
