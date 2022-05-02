@@ -5,7 +5,7 @@ const Post = ({ post }) => {
 
   if (router.isFallback) {
     return <h1>Loading...</h1>
-  }
+  } // if fallback: true in return getStaticPaths, this if block is needed for waiting data resp from API and show fallback UI, and at build time will show error if this code is does not exist. So, when we set fallback: 'blocking', no need this code, with this config, It will show UI directly when data response data from an API.
 
   return (
     <>
@@ -30,20 +30,22 @@ export const getStaticPaths = async () => {
     fallback: true,
   }
 
-  /* // * If posts grater than 100 and more */
-  //   const res = await fetch('https://jsonplaceholder.typicode.com/posts')
-  //   const data = await res.json()
+  // * If posts grater than 100 and more */
+  // const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+  // const data = await res.json()
 
-  //   const paths = data.map((post) => {
-  //     return {
-  //       params: { postId: `${post.id}` },
-  //     }
-  //   })
-
+  // const paths = data.map((post) => {
   //   return {
-  //     paths,
-  //     fallback: false,
+  //     params: { postId: `${post.id}` },
   //   }
+  // })
+
+  // console.log(paths)
+
+  // return {
+  //   paths,
+  //   fallback: false,
+  // }
 }
 
 export const getStaticProps = async (context) => {
